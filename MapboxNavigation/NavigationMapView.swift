@@ -199,6 +199,17 @@ open class NavigationMapView: MGLMapView, UIGestureRecognizerDelegate {
         }
     }
     
+    /**
+     Resets all properties on `MGLMapView` around user course tracking.
+     
+     If reusing the map view outside of navigation, call this before attempting to change `MGLMapView.userTrackingMode` or changing `MGLMapView.showsUserLocation`.
+     */
+    @objc public func disableUseCourseTracking() {
+        userCourseView = nil
+        userLocationForCourseTracking = nil
+        tracksUserCourse = false
+    }
+    
     private lazy var mapTapGesture = UITapGestureRecognizer(target: self, action: #selector(didRecieveTap(sender:)))
     
     //MARK: - Initalizers
