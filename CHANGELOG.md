@@ -4,6 +4,7 @@
 
 * Fixed banner stuck on rerouting past the reroute threshold when navigation is set to simulation mode. ([#1583](https://github.com/mapbox/mapbox-navigation-ios/pull/1583))
 * Modified the current road name displayed with new map attribute fields. We use the road feature `ref` attribute's `shield` and `reflen` to retrieve the shield image presented next to the current road name. ([#1576](https://github.com/mapbox/mapbox-navigation-ios/pull/1576)) 
+* Added `NavigationMapView.disableUseCourseTracking()` for disabling `tracksUserCourse`. Useful when using the same map view inside and outside of navigation. [#1594](https://github.com/mapbox/mapbox-navigation-ios/pull/1594/)
 
 ## v0.19.0 (July, 24, 2018)
 
