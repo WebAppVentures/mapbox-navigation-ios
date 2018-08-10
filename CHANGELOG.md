@@ -7,6 +7,7 @@
 * Modified the label at the bottom of the map to display the route shield in addition to the road name. ([#1576](https://github.com/mapbox/mapbox-navigation-ios/pull/1576)) 
 * Fixed an issue where the steps list drag handlebar disappears whenever the user taps the resume button. ([#1588](https://github.com/mapbox/mapbox-navigation-ios/pull/1588))
 * Resolved the partially styled user interface issue that occurs when the style theme is switched between the `NightStyle` and `DayStyle`, after the resume  button was tapped. ([#1589](https://github.com/mapbox/mapbox-navigation-ios/pull/1589))
+* Fixed a rare crash associated with the keyboard when showing the end of route view controller. [#1599](https://github.com/mapbox/mapbox-navigation-ios/pull/1599/)
 * Added `NavigationMapView.disableUseCourseTracking()` for disabling `tracksUserCourse`. Useful when using the same map view inside and outside of navigation. [#1594](https://github.com/mapbox/mapbox-navigation-ios/pull/1594/)
 
 ## v0.19.0 (July, 24, 2018)
